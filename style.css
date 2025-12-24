@@ -78,7 +78,19 @@ ul {
   cursor: pointer;
 }
 
-.contact-form button:hover {
+/* MAIN BUTTONS (Call & WhatsApp) */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 30px;
+  background: #01D9C3;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+}
+
+.btn:hover {
   background: #00b3a4;
 }
 
@@ -93,15 +105,17 @@ ul {
   background: #1e7e34;
 }
 
-/* WHATSAPP BUTTON */
+/* WHATSAPP BUTTON (same as Call) */
 .whatsapp-btn {
-  background: #25D366;
-  color: white;
+  background: #01D9C3;
+  color: #000;
   margin-left: 10px;
 }
 
 .whatsapp-btn:hover {
-  background: #1ebe5d;
+  background: #00b3a4;
+}
+
 }
 
 /* GALLERY */
@@ -144,3 +158,4 @@ footer {
   text-align: center;
   padding: 20px;
 }
+
