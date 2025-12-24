@@ -96,13 +96,13 @@ ul {
 
 /* SMS BUTTON */
 .sms-btn {
-  background: #28a745;
-  color: white;
+  background: #01D9C3;
+  color: #000;
   margin-left: 10px;
 }
 
 .sms-btn:hover {
-  background: #1e7e34;
+  background: #00b3a4;
 }
 
 /* WHATSAPP BUTTON (same as Call) */
@@ -158,4 +158,5 @@ footer {
   text-align: center;
   padding: 20px;
 }
+
 
