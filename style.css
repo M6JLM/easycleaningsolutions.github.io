@@ -170,5 +170,31 @@ footer {
   padding: 20px;
 }
 
+/* FOOTER WITH LOGO */
+.site-footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer-logo {
+  height: 40px;
+  background: white;
+  padding: 5px;
+  border-radius: 6px;
+}
+
+/* MOBILE FRIENDLY FOOTER */
+@media (max-width: 600px) {
+  .site-footer {
+    flex-direction: column;
+  }
+}
+
 
 
