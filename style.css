@@ -100,6 +100,28 @@ ul {
   font-weight: bold;
   border-radius: 30px;
 }
+.ecs-logo {
+  width: 140px;              /* adjust size */
+  opacity: 0;
+  transform: scale(0.95);
+  animation: logoReveal 1.2s ease-out forwards;
+}
+
+/* Optional hover effect (desktop only) */
+.ecs-logo:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+}
+
+@keyframes logoReveal {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.ecs-logo {
+  animation-delay: 0.3s;
+}
 
 .btn:hover {
   background: #00b3a4;
@@ -195,6 +217,7 @@ footer {
     flex-direction: column;
   }
 }
+
 
 
 
