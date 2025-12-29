@@ -1,10 +1,13 @@
+/* GLOBAL */
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
   margin: 0;
   background: #f5f7fa;
   color: #333;
+}
 
-  .logo {
+/* LOGO */
+.logo {
   height: 80px;
   max-width: 120px;
   object-fit: contain;
@@ -12,8 +15,6 @@ body {
   padding: 8px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-}
-  
 }
 
 /* HEADER */
@@ -33,15 +34,16 @@ header h1 {
   display: inline-block;
   margin-top: 20px;
   padding: 14px 30px;
-  background: white;
-  color: #01D9C3;
+  background: #01D9C3;
+  color: #000;
   text-decoration: none;
   font-weight: bold;
   border-radius: 30px;
+  transition: background 0.3s ease;
 }
 
 .btn:hover {
-  opacity: 0.9;
+  background: #00b3a4;
 }
 
 /* SECTIONS */
@@ -89,28 +91,17 @@ ul {
   cursor: pointer;
 }
 
-/* MAIN BUTTONS (Call & WhatsApp) */
-.btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 14px 30px;
-  background: #01D9C3;
-  color: #000;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 30px;
-}
+/* LOGO ANIMATION */
 .ecs-logo {
-  width: 140px;              /* adjust size */
+  width: 140px;
   opacity: 0;
   transform: scale(0.95);
   animation: logoReveal 1.2s ease-out forwards;
+  animation-delay: 0.3s;
 }
 
-/* Optional hover effect (desktop only) */
 .ecs-logo:hover {
   transform: scale(1.03);
-  transition: transform 0.3s ease;
 }
 
 @keyframes logoReveal {
@@ -119,36 +110,11 @@ ul {
     transform: scale(1);
   }
 }
-.ecs-logo {
-  animation-delay: 0.3s;
-}
 
-.btn:hover {
-  background: #00b3a4;
-}
-
-/* SMS BUTTON */
-.sms-btn {
-  background: #01D9C3;
-  color: #000;
-  margin-left: 10px;
-}
-
-.sms-btn:hover {
-  background: #00b3a4;
-}
-
-/* WHATSAPP BUTTON (same as Call) */
+/* EXTRA BUTTONS */
+.sms-btn,
 .whatsapp-btn {
-  background: #01D9C3;
-  color: #000;
   margin-left: 10px;
-}
-
-.whatsapp-btn:hover {
-  background: #00b3a4;
-}
-
 }
 
 /* GALLERY */
@@ -185,14 +151,6 @@ ul {
 }
 
 /* FOOTER */
-footer {
-  background: #222;
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
-
-/* FOOTER WITH LOGO */
 .site-footer {
   background: #222;
   color: white;
@@ -211,13 +169,9 @@ footer {
   border-radius: 6px;
 }
 
-/* MOBILE FRIENDLY FOOTER */
+/* MOBILE */
 @media (max-width: 600px) {
   .site-footer {
     flex-direction: column;
   }
 }
-
-
-
-
