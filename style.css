@@ -20,8 +20,9 @@ body {
   padding: 10px 20px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center; /* THIS CENTRES THE NAV */
 }
+
 
 .nav-logo img {
   height: 60px;
@@ -222,4 +223,5 @@ ul {
     flex-direction: column;
   }
 }
+
 
