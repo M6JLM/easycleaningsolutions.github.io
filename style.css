@@ -392,3 +392,11 @@ ul {
     grid-template-columns: 1fr;
   }
 }
+/* Gardiner logo – black background */
+.supplier-logo--gardiner {
+  background: #000;
+}
+
+.supplier-logo--gardiner img {
+  filter: brightness(1.1);
+}
